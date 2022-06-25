@@ -125,12 +125,12 @@
                     <limit>
                       <counter>INSTRUCTION</counter>
                       <value>COVEREDRATIO</value>
-                      <minimum>${jacoco.unit-tests.limit.instruction-ratio}</minimum>
+                      <minimum>0</minimum>
                     </limit>
                     <limit>
                       <counter>BRANCH</counter>
                       <value>COVEREDRATIO</value>
-                      <minimum>${jacoco.unit-tests.limit.branch-ratio}</minimum>
+                      <minimum>0</minimum>
                     </limit>
                   </limits>
                 </rule>
