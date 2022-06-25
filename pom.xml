@@ -117,7 +117,7 @@
               <goal>check</goal>
             </goals>
             <configuration>
-              <dataFile>${project.build.directory}/jacoco.exec</dataFile>
+              <dataFile>${project.build.directory}/coverage-reports/jacoco.exec</dataFile>
               <rules>
                 <rule>
                   <element>BUNDLE</element>
@@ -125,12 +125,12 @@
                     <limit>
                       <counter>INSTRUCTION</counter>
                       <value>COVEREDRATIO</value>
-                      <minimum>0</minimum>
+                      <minimum>${jacoco.unit-tests.limit.instruction-ratio}</minimum>
                     </limit>
                     <limit>
                       <counter>BRANCH</counter>
                       <value>COVEREDRATIO</value>
-                      <minimum>0</minimum>
+                      <minimum>${jacoco.unit-tests.limit.branch-ratio}</minimum>
                     </limit>
                   </limits>
                 </rule>
@@ -140,7 +140,7 @@
                     <limit>
                       <counter>COMPLEXITY</counter>
                       <value>TOTALCOUNT</value>
-                      <maximum>1</maximum>
+                      <maximum>${jacoco.unit-tests.limit.class-complexity}</maximum>
                     </limit>
                   </limits>
                 </rule>
@@ -150,7 +150,7 @@
                     <limit>
                       <counter>COMPLEXITY</counter>
                       <value>TOTALCOUNT</value>
-                      <maximum>1</maximum>
+                      <maximum>${jacoco.unit-tests.limit.method-complexity}</maximum>
                     </limit>
                   </limits>
                 </rule>
