@@ -29,7 +29,7 @@ public class CalculadoraTest {
     @Test
     public void testeAdultoBaixoPesoGraveLimiteMinimoIdadeLimiteMinimoImc()
     {
-        assertEquals("Baixo peso grave", calc.calcularImc(52.00, 1.80, 20, "masculino"));
+        assertEquals("Baixo peso grave", calc.calcularImc(51.84, 1.80, 20, "masculino"));
     }
 
     @Test
