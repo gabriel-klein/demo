@@ -679,7 +679,7 @@ public class CalculadoraTest {
     
     @Test
     public void testeSobrepesoCriancaMenina18Anos() {
-    	assertEquals("Sobrepeso", calc.calcularImc(78.0,1.7,18,"feminino"));
+    	assertEquals("Sobrepeso", calc.calcularImc(178.0,1.7,18,"feminino"));
     }
     
     @Test
